@@ -52,7 +52,7 @@ Sales Taxes: 6.70
 Total: 74.68
 
 
-#-------------- Steps to run ---------------
+# Steps to run
 
 ## Prerequisites
 Java 8 installation is a prerequisite. In case it's not installed locally, it can be installed using package managers.
