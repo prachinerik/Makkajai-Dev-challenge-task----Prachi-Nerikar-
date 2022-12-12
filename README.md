@@ -50,3 +50,47 @@ Output 3:
 1 imported box of chocolates: 11.85
 Sales Taxes: 6.70
 Total: 74.68
+
+
+#-------------- Steps to run ---------------
+
+## Prerequisites
+Java 8 installation is a prerequisite. In case it's not installed locally, it can be installed using package managers.
+In MacOS, Java can be installed using Homebrew.
+
+
+```commandline
+
+brew update
+
+brew tap homebrew/cask-versions
+
+brew info --cask java8
+
+brew install --cask java8
+```
+
+Installation can be validated using
+```commandline
+java --version
+```
+Installing gradle
+```commandline
+brew install gradle
+```
+
+To Check gradle installation
+```commandline
+gradle --version
+```
+
+Go To the location of the Project in terminal
+
+```commandline
+gradle clean build
+gradle run --console=plain
+```
+
+
+
+
