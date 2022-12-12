@@ -55,38 +55,32 @@ Total: 74.68
 # Steps to run
 
 ## Prerequisites
-Java 8 installation is a prerequisite. In case it's not installed locally, it can be installed using package managers.
-In MacOS, Java can be installed using Homebrew.
-
+Java 18 installation is a prerequisite and the installation can be validated using
+```commandline
+$ java --version
+java 18.0.1.1 2022-04-22
+```
+In case it's not installed locally, it can be installed using package managers.
+In MacOS, I installed Java using Homebrew and the following commands.
 
 ```commandline
-
-brew update
-
-brew tap homebrew/cask-versions
-
-brew info --cask java8
-
-brew install --cask java8
+brew install java
 ```
+I am using gradle as a build system.
+To check if gradle is installed
 
-Installation can be validated using
-```commandline
-java --version
-```
-Installing gradle
-```commandline
-brew install gradle
-```
-
-To Check gradle installation
 ```commandline
 gradle --version
 ```
+In case gradle is not installed, it can be installed using homebrew in MacOS
 
+```commandline
+brew install gradle
+```
 Go To the location of the Project in terminal
 
 ```commandline
+cd /path/where/this/git/repo/is/checked/out
 gradle clean build
 gradle run --console=plain
 ```
